@@ -1,0 +1,142 @@
+@font-face{
+    font-family:barlow;
+    src:url(font/barlow/BarlowCondensed-Regular.ttf)
+}
+
+@font-face{
+    font-family:cinzel;
+    src:url(font/cinzel/Cinzel-Regular.ttf);
+}
+
+@font-face{
+    font-family:ptm;
+    src:url(font/pt_mono/PTMono-Regular.ttf)
+}
+body{    
+    background:blue;
+    background-image:url(imagem/background.gif);
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    font-family:ptm;
+}
+
+section{
+    background:rgba(255, 255, 255, 0.555);
+    margin: auto;
+    padding:15px;
+    border-radius:23px;
+    box-shadow:3px 3px 3px rgba(0, 0, 0, 0.39);
+    border: solid 1px black;
+    margin-top:25px;
+
+}
+
+header.thtml{
+    text-align:center;
+    background:rgba(161, 159, 159, 0.452);
+    background-image:url(imagem/title.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color:rgb(209, 209, 209);
+    text-shadow:2px 2px 2px black;
+    font-family:cinzel;
+    
+}
+
+
+
+.conteiner{
+    background:rgba(206, 206, 206, 0.63);
+    padding: 10px;
+    border-radius:13px;
+    border:solid 1px black;
+}
+
+div{
+    margin-top:5px; 
+}
+
+legend{
+    text-align:center;
+    color:black;
+    font: 20px normal;
+    font-family:barlow;
+}
+
+textarea{
+    margin-top: 10px;
+}
+
+#botões{
+    margin-top:10px;
+    
+}
+
+button{
+    width:90px;
+    height:30px;
+    border-radius:7px;
+    color:white;
+    text-shadow:1px 1px 1px black;
+    outline:0;
+   border-bottom:solid 0px green;
+}
+
+.confirmar{
+    background:rgb(0, 179, 0);
+    border-bottom-color:rgb(0, 179, 0);
+}
+
+.limpar{
+    background:rgb(85, 85, 231);
+    border-bottom-color: rgb(85, 85, 231);
+}
+
+textarea{
+    font-family:arial;
+}
+
+input{
+    border-radius:15px;
+    width:200px;
+    height:5px;
+    padding:10px;
+    font: 15px normal;
+    outline:0;
+    border:solid 0.5px black;
+    margin-top:8px;
+}
+
+select{
+    width:200px;
+    height:30px;
+    border-radius:25px;
+    outline:0;
+    border:solid 1px black;
+    margin-top:8px;
+}
+
+textarea{
+    padding:15px;
+    border-radius:20px;
+    border:solid 1px black;
+    outline:0;
+}
+
+header.tphp{
+    text-align:center;
+    background:rgba(161, 159, 159, 0.452);
+    
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color:rgb(209, 209, 209);
+    text-shadow:2px 2px 2px black;
+    font-family:cinzel; 
+}
+
+.php_comand{
+    text-align:center;
+}

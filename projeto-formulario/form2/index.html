@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' href='imagem/logo.png'>
+    <link rel='stylesheet' href='cs.css'>
+    
+    <title>Formulário de Identificação</title>
+</head>
+<body>
+    <form action="_insert.php" method='POST'>
+    <header class='thtml'><h1>Informe-se aqui</h1></header>
+    <section>
+        <div><fieldset class='conteiner'><legend>Dados Pessoais</legend>
+          <ol>
+              <dd>
+              <p><li><label for='nome'>Nome&nbsp;</label><br><input type='text' name='nome' id='nome' placeholder='Nome Completo' required></li></p>
+              <p><li><label for='sel'>Sexo</label>&nbsp;<br> <select id='sel' name='sex'><option>Selecione</option><option>Masculino</option><option>Feminino</option></select></li></p>
+              <p><li><label for='Status'>Status Civíl&nbsp;</label><br><select id='Status' name ='status'><option>Selecione</option><option >Solteiro(a)</option><option >Casado(a)</option><option>Viúvo(a)</option><option>Divorciado(a)</option></select></li></p>
+              <p><li><label for='idade'>Data de Nascimento</label>&nbsp;<br><input type='date' name='idade' id='idade'></li></p> 
+             
+            </dd>
+          </ol> 
+        </fieldset>
+        </div>  
+        <div>
+            <fieldset class='conteiner'><legend>Meios de Comunicação</legend>
+                <ol start='5'>
+                    <dd>
+                        <p><li><label for='email'>E-mail&nbsp;</label><br><input type='email' name='mail' id='email' placeholder='exemplo@host.com' required></li></p>
+                        <p><li><label for='tel'>Telefone(Whatsapp)&nbsp;</label><br><input type='text' name='tel' id='tel' maxlength='16' placeholder='(61) 9 4567-8910' required></li></p>
+                        <p><li><label for='fb'>Facebook&nbsp;</label><br><input type='text' name='fbook' id='fb' placeholder='Perfil do Facebook' required></li></p>
+                        <p><li><label for='instagram'>Instagram&nbsp;</label><br><input type='text' name='insta' id='instagram' placeholder='@Perfil' required></li></p>
+                    </dd>
+                </ol>
+
+            </fieldset>
+        </div>   
+        <div><fieldset class='conteiner'><legend>Relatório</legend>
+            <ul>
+                <dd>
+               <p><li><label for='avaliar'>Avalie&nbsp;<br><select name='avaliar' id='avaliar'><option checked>Selecione</option><option>Ótimo</option><option>Bom</option><option>Regular</option><option>Ruim</option></select></label></li></p>
+               <p><li><label for='comentar'>Comente o que precisamos melhorar<br></label><br><textarea id='comentar' name='comentario' cols='20' rows='6' style='resize:none;' maxlength='200' placeholder='Comente Aqui'></textarea></li></p>
+               
+                </dd>
+            </ul>
+        </fieldset>
+        <div id='botões'><dd><button type='submit/button' class="confirmar" onclick="start()">Enviar</button>|<button type='reset' onclick='limpar()' class='limpar'>Limpar</button></dd></div>
+        </div>
+    </section>
+    <script src='scpt.js'></script>
+</form>
+    
+</body>
+</html>
